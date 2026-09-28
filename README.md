@@ -1,4 +1,4 @@
-# 🚀 AI Job Autofiller Extension
+# 🚀 Job Application Autofiller Extension
 
 An intelligent, privacy-first Google Chrome extension that automates and streamlines the tedious job application process. Powered by the completely free Google Gemini API, this extension not only autofills standard form fields but uses AI to generate tailored answers for complex, multi-line questions based on your unique resume and profile.
 
