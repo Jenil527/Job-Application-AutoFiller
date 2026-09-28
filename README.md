@@ -25,7 +25,7 @@ An intelligent, privacy-first Google Chrome extension that automates and streaml
 1. **Clone or Download** this repository to your local machine.
 2. Open Google Chrome and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** using the toggle in the top right corner.
-4. Click **Load unpacked** and select the `AI-Job-Autofiller` directory.
+4. Click **Load unpacked** and select the `Job-Application-AutoFiller` directory.
 5. Click the extension icon in your browser toolbar and select **Options** (or "Edit Profile").
 6. **Get your API Key:** Follow the link in the options page to get a completely free API key from Google AI Studio. Paste it in.
 7. Fill out your Personal Information, Resume, and any Custom Q&As. Click **Save**.
