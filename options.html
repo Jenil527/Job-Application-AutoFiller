@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Job Autofiller Options</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Job Profile Settings</h1>
+      <p>Configure your information to let the AI magically fill out applications for you.</p>
+    </header>
+
+    <div class="main-content">
+      <form id="profile-form">
+        <section class="card">
+          <h2>Personal Information</h2>
+          <div class="input-grid">
+            <div class="input-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane">
+            </div>
+            <div class="input-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe">
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jane.doe@example.com">
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+            </div>
+            <div class="input-group">
+              <label for="linkedin">LinkedIn URL</label>
+              <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/janedoe">
+            </div>
+            <div class="input-group">
+              <label for="github">GitHub URL</label>
+              <input type="url" id="github" name="github" placeholder="https://github.com/janedoe">
+            </div>
+            <div class="input-group">
+              <label for="portfolio">Portfolio URL</label>
+              <input type="url" id="portfolio" name="portfolio" placeholder="https://janedoe.com">
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>AI Settings</h2>
+          <div class="input-group">
+            <label for="apiKey">Gemini API Key (Free)</label>
+            <input type="password" id="apiKey" name="apiKey" placeholder="AIzaSy...">
+            <small>Get a completely free key at <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color:#60a5fa">Google AI Studio</a>. Stored locally.</small>
+          </div>
+          <div class="input-group">
+            <label for="resumeFile">Upload PDF Resume (Optional)</label>
+            <input type="file" id="resumeFile" name="resumeFile" accept="application/pdf">
+            <small>Uploading a PDF will automatically extract its text into the field below.</small>
+          </div>
+          <div class="input-group">
+            <label for="resumeText">Resume (Plain Text)</label>
+            <textarea id="resumeText" name="resumeText" rows="10" placeholder="Paste your full resume text here or upload a PDF above. The AI will use this to answer questions."></textarea>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Custom Q&A</h2>
+          <p style="margin-bottom: 1rem; color: var(--text-secondary); font-size: 0.9rem;">Add specific questions and exactly how you want them answered. The AI will prioritize these.</p>
+          <div id="qa-container">
+            <!-- Dynamic QA items go here -->
+          </div>
+          <button type="button" id="add-qa-btn" class="add-btn">+ Add Q&A</button>
+        </section>
+
+        <div class="actions">
+          <button type="submit" class="primary-btn">Save Profile</button>
+          <span id="save-status" class="status-msg"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="pdf.min.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
